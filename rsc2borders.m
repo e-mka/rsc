@@ -1,5 +1,5 @@
 function [M] = rsc2borders(filename)
-	fh = fopen(filename, 'r');
+    fh = fopen(filename, 'r');
     max_level = str2num(fgetl(fh));
     aux = str2num(fgetl(fh)); w = aux(1); h = aux(2);
     aux = str2num(fgetl(fh)); xmin = aux(1); xmax = aux(2);
